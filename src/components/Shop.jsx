@@ -1,5 +1,5 @@
-import { DUMMY_PRODUCTS } from '../dummy-products.js';
-import Product from './Product.jsx';
+import { DUMMY_PRODUCTS } from "../dummy-products.js";
+import Product from "./Product.jsx";
 
 export default function Shop({ onAddItemToCart }) {
   return (
@@ -9,7 +9,7 @@ export default function Shop({ onAddItemToCart }) {
       <ul id="products">
         {DUMMY_PRODUCTS.map((product) => (
           <li key={product.id}>
-            <Product {...product} onAddToCart={onAddItemToCart} />
+            <Product {...product} />
           </li>
         ))}
       </ul>
